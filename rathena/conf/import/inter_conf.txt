@@ -1,0 +1,23 @@
+login_server_id: rathena
+login_server_pw: rathena
+login_server_db: rathena
+
+ipban_db_id: rathena
+ipban_db_pw: rathena
+ipban_db_db: rathena
+
+char_server_id: rathena
+char_server_pw: rathena
+char_server_db: rathena
+
+map_server_id: rathena
+map_server_pw: rathena
+map_server_db: rathena
+
+web_server_id: rathena
+web_server_pw: rathena
+web_server_db: rathena
+
+log_db_id: rathena
+log_db_pw: rathena
+log_db_db: rathena_logs

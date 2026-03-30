@@ -1,0 +1,6 @@
+﻿  grammar.c
+  libconfig.c
+  scanctx.c
+  scanner.c
+  strbuf.c
+  libconfig.vcxproj -> C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\libconfig.lib

@@ -1,0 +1,15 @@
+﻿  common.cpp
+  node.cpp
+  parse.cpp
+  preprocess.cpp
+  tree.cpp
+  base64.cpp
+  char_traits.cpp
+  error.cpp
+  format.cpp
+  language.cpp
+  memory_resource.cpp
+  memory_util.cpp
+  time.cpp
+  utf.cpp
+  ryml.vcxproj -> C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\ryml.lib

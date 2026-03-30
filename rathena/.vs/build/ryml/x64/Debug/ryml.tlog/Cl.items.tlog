@@ -1,0 +1,14 @@
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\3rdparty\rapidyaml\src\c4\yml\common.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\ryml\x64\Debug\common.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\3rdparty\rapidyaml\src\c4\yml\node.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\ryml\x64\Debug\node.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\3rdparty\rapidyaml\src\c4\yml\parse.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\ryml\x64\Debug\parse.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\3rdparty\rapidyaml\src\c4\yml\preprocess.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\ryml\x64\Debug\preprocess.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\3rdparty\rapidyaml\src\c4\yml\tree.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\ryml\x64\Debug\tree.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\3rdparty\rapidyaml\ext\c4core\src\c4\base64.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\ryml\x64\Debug\base64.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\3rdparty\rapidyaml\ext\c4core\src\c4\char_traits.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\ryml\x64\Debug\char_traits.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\3rdparty\rapidyaml\ext\c4core\src\c4\error.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\ryml\x64\Debug\error.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\3rdparty\rapidyaml\ext\c4core\src\c4\format.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\ryml\x64\Debug\format.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\3rdparty\rapidyaml\ext\c4core\src\c4\language.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\ryml\x64\Debug\language.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\3rdparty\rapidyaml\ext\c4core\src\c4\memory_resource.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\ryml\x64\Debug\memory_resource.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\3rdparty\rapidyaml\ext\c4core\src\c4\memory_util.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\ryml\x64\Debug\memory_util.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\3rdparty\rapidyaml\ext\c4core\src\c4\time.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\ryml\x64\Debug\time.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\3rdparty\rapidyaml\ext\c4core\src\c4\utf.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\ryml\x64\Debug\utf.obj

@@ -1,0 +1,15 @@
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\src\common\cli.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\common-minicore\x64\Debug\cli.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\src\common\conf.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\common-minicore\x64\Debug\conf.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\src\common\core.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\common-minicore\x64\Debug\core.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\src\common\des.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\common-minicore\x64\Debug\des.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\src\common\grfio.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\common-minicore\x64\Debug\grfio.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\src\common\malloc.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\common-minicore\x64\Debug\malloc.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\src\common\mapindex.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\common-minicore\x64\Debug\mapindex.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\src\common\md5calc.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\common-minicore\x64\Debug\md5calc.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\src\common\msg_conf.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\common-minicore\x64\Debug\msg_conf.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\src\common\nullpo.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\common-minicore\x64\Debug\nullpo.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\src\common\random.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\common-minicore\x64\Debug\random.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\src\common\showmsg.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\common-minicore\x64\Debug\showmsg.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\src\common\strlib.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\common-minicore\x64\Debug\strlib.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\src\common\utils.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\common-minicore\x64\Debug\utils.obj
+C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\src\common\winapi.cpp;C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\.vs\build\common-minicore\x64\Debug\winapi.obj

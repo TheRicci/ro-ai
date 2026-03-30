@@ -1,0 +1,46 @@
+[Status]: Memory manager initialised: log/char-server.exe.leaks
+
+                                                                      
+                   rAthena Development Team presents                  
+                      ___   __  __                                    
+                _____/   | / /_/ /_  ___  ____  ____ _                
+               / ___/ /| |/ __/ __ \/ _ \/ __ \/ __ `/                
+              / /  / ___ / /_/ / / /  __/ / / / /_/ /                 
+             /_/  /_/  |_\__/_/ /_/\___/_/ /_/\__,_/                  
+                                                                      
+                     http://rathena.org/board/                        
+                                                                      
+[Info]: Git Hash: '25f281c9123796c286ae63676767f5fb41cd9908'
+[Info]: Server uses 'select' as event dispatcher
+[Info]: Server supports up to '4096' concurrent connections.
+[Status]: Login server IP address : 127.0.0.1 -> 127.0.0.1
+[Status]: Character server IP address : 127.0.0.1 -> 127.0.0.1
+[Info]: Done reading conf/import/char_conf.txt.
+[Info]: Done reading conf/char_athena.conf.
+[Info]: Done reading conf/import/inter_conf.txt.
+[Info]: Done reading conf/inter_athena.conf.
+[Info]: Done reading '169' messages in 'conf/msg_conf/char_msg.conf'.
+[Warning]: Using the default user/password s1/p1 is NOT RECOMMENDED.
+[Notice]: Please edit your 'login' table to create a proper inter-server user/password (gender 'S')
+[Notice]: And then change the user/password to use in conf/char_athena.conf (or conf/import/char_conf.txt)
+[Info]: Done reading conf/import/inter_conf.txt.
+[Info]: Done reading conf/inter_athena.conf.
+[Info]: Connect Character DB server.... (Character Server)
+[Status]: Loading 'conf/inter_server.yml'...[Status]: Loading '1' entries in 'conf/inter_server.yml'
+[Status]: Loading [1/1] entries from 'conf/inter_server.yml'[Status]: Done reading '1' entries in 'conf/inter_server.yml'
+[Status]: Loading 'conf/import/inter_server.yml'...[Status]: Loading 'db/exp_guild.yml'...[Status]: Loading 'db/re/exp_guild.yml'...[Status]: Loading '49' entries in 'db/re/exp_guild.yml'
+[Status]: Loading [1/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [2/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [3/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [4/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [5/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [6/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [7/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [8/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [9/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [10/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [11/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [12/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [13/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [14/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [15/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [16/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [17/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [18/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [19/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [20/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [21/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [22/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [23/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [24/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [25/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [26/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [27/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [28/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [29/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [30/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [31/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [32/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [33/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [34/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [35/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [36/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [37/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [38/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [39/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [40/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [41/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [42/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [43/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [44/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [45/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [46/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [47/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [48/49] entries from 'db/re/exp_guild.yml'[Status]: Loading [49/49] entries from 'db/re/exp_guild.yml'[Status]: Done reading '49' entries in 'db/re/exp_guild.yml'
+[Status]: Loading 'db/import/exp_guild.yml'...[Info]: Clan loaded (1 - Swordman Clan)
+[Info]: Clan loaded (2 - Arcwand Clan)
+[Info]: Clan loaded (3 - Golden Mace Clan)
+[Info]: Clan loaded (4 - Crossbow Clan)
+[Status]: Finished Reading GeoIP Database.
+[Status]: Characters per Account: '0'.
+[Info]: Start checking DB integrity
+[Info]: DB integrity check finished with success
+[Status]: The char-server is ready (Server is listening on the port 6121).
+
+[Info]: Attempt to connect to login-server...
+[Status]: Connecting to 127.0.0.1:6900
+[Status]: Connected to login-server (connection #2).
+[Status]: Awaiting maps from map-server.

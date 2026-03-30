@@ -1,0 +1,21 @@
+[Status]: Memory manager initialised: log/login-server.exe.leaks
+
+                                                                      
+                   rAthena Development Team presents                  
+                      ___   __  __                                    
+                _____/   | / /_/ /_  ___  ____  ____ _                
+               / ___/ /| |/ __/ __ \/ _ \/ __ \/ __ `/                
+              / /  / ___ / /_/ / / /  __/ / / / /_/ /                 
+             /_/  /_/  |_\__/_/ /_/\___/_/ /_/\__,_/                  
+                                                                      
+                     http://rathena.org/board/                        
+                                                                      
+[Info]: Git Hash: '25f281c9123796c286ae63676767f5fb41cd9908'
+[Info]: Server uses 'select' as event dispatcher
+[Info]: Server supports up to '4096' concurrent connections.
+[Info]: Finished reading conf/import/inter_conf.txt.
+[Info]: Finished reading conf/inter_athena.conf.
+[Info]: Finished reading conf/import/login_conf.txt.
+[Info]: Finished reading conf/login_athena.conf.
+[Info]: Done reading '23' messages in 'conf/msg_conf/login_msg.conf'.
+[Debug]: at C:\Users\Ricci\Documents\GitHub\ro-ai\rathena\src\login\ipban.cpp:195
