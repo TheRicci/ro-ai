@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ro-ai-planner
+  namespace: ro-ai-intelligence
+spec:
+  replicas: 1
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ro-ai-model-gateway
+  namespace: ro-ai-intelligence
+spec:
+  replicas: 1
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ro-ai-admin-api
+  namespace: ro-ai-intelligence
+spec:
+  replicas: 1

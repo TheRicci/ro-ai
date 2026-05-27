@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - configmap-intelligence.yaml
+  - service-planner.yaml
+  - service-model-gateway.yaml
+  - service-admin-api.yaml
+  - deployment-planner.yaml
+  - deployment-model-gateway.yaml
+  - deployment-admin-api.yaml

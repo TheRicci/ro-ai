@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ro-ai-world
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ro-ai-intelligence
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ro-ai-bots

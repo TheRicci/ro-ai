@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ro-ai-admin-api
+  namespace: ro-ai-intelligence
+  labels:
+    app.kubernetes.io/name: ro-ai-admin-api
+    app.kubernetes.io/part-of: ro-ai-intelligence
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: ro-ai-admin-api
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: ro-ai-admin-api
+        app.kubernetes.io/part-of: ro-ai-intelligence
+    spec:
+      serviceAccountName: ro-ai-admin-api
+      containers:
+        - name: admin-api
+          image: ghcr.io/ro-ai/admin-api:latest
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: BOT_MEMORY_TABLE_FILE
+              value: /mnt/secrets-store/bot_memory_table
+          ports:
+            - name: http
+              containerPort: 8080
+          volumeMounts:
+            - name: secrets-store
+              mountPath: /mnt/secrets-store
+              readOnly: true
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: http
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: http
+            initialDelaySeconds: 20
+            periodSeconds: 20
+      volumes:
+        - name: secrets-store
+          csi:
+            driver: secrets-store.csi.k8s.io
+            readOnly: true
+            volumeAttributes:
+              secretProviderClass: ro-ai-intelligence-secrets

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ro-ai-bot-runtime-config
+  namespace: ro-ai-bots
+data:
+  PLANNER_URL: http://ro-ai-planner.ro-ai-intelligence.svc.cluster.local:8080
+  LOGIN_ADDR: rathena-login.ro-ai-world.svc.cluster.local:6900
+  CHAR_ADDR: rathena-char.ro-ai-world.svc.cluster.local:6121
+  MAP_ADDR: rathena-map.ro-ai-world.svc.cluster.local:5121

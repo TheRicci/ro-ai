@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rathena-login
+  namespace: ro-ai-world
+  labels:
+    app.kubernetes.io/name: rathena-login
+    app.kubernetes.io/part-of: ro-ai-world
+spec:
+  selector:
+    app.kubernetes.io/name: rathena-login
+  ports:
+    - name: login
+      port: 6900
+      targetPort: login

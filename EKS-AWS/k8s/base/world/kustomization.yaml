@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - service-login.yaml
+  - service-char.yaml
+  - service-map.yaml
+  - deployment-login.yaml
+  - deployment-char.yaml
+  - deployment-map.yaml

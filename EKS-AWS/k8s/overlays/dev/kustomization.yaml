@@ -1,0 +1,31 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../base
+
+labels:
+  - pairs:
+      app.kubernetes.io/environment: dev
+    includeSelectors: true
+    includeTemplates: true
+
+images:
+  - name: ghcr.io/ro-ai/rathena
+    newTag: dev
+  - name: ghcr.io/ro-ai/planner
+    newTag: dev
+  - name: ghcr.io/ro-ai/model-gateway
+    newTag: dev
+  - name: ghcr.io/ro-ai/admin-api
+    newTag: dev
+  - name: ghcr.io/ro-ai/bot-adapter
+    newTag: dev
+  - name: ghcr.io/ro-ai/openkore
+    newTag: dev
+
+patches:
+  - path: patch-replicas-world.yaml
+  - path: patch-replicas-intelligence.yaml
+  - path: patch-replicas-bots.yaml
+  - path: patch-secretproviderclasses.yaml

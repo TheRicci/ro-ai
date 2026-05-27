@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rathena-login
+  namespace: ro-ai-world
+spec:
+  replicas: 1
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rathena-char
+  namespace: ro-ai-world
+spec:
+  replicas: 1
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rathena-map
+  namespace: ro-ai-world
+spec:
+  replicas: 1

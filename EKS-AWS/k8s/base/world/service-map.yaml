@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rathena-map
+  namespace: ro-ai-world
+  labels:
+    app.kubernetes.io/name: rathena-map
+    app.kubernetes.io/part-of: ro-ai-world
+spec:
+  selector:
+    app.kubernetes.io/name: rathena-map
+  ports:
+    - name: map
+      port: 5121
+      targetPort: map

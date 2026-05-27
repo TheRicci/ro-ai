@@ -1,0 +1,74 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: ro-ai-bot-runtime
+  namespace: ro-ai-bots
+  labels:
+    app.kubernetes.io/name: ro-ai-bot-runtime
+    app.kubernetes.io/part-of: ro-ai-bots
+spec:
+  serviceName: ro-ai-bot-runtime
+  replicas: 0
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: ro-ai-bot-runtime
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: ro-ai-bot-runtime
+        app.kubernetes.io/part-of: ro-ai-bots
+    spec:
+      serviceAccountName: ro-ai-bot-runtime
+      containers:
+        - name: bot-adapter
+          image: ghcr.io/ro-ai/bot-adapter:latest
+          imagePullPolicy: IfNotPresent
+          envFrom:
+            - configMapRef:
+                name: ro-ai-bot-runtime-config
+          env:
+            - name: BOT_ACCOUNT_USERNAME_FILE
+              value: /mnt/secrets-store/account_username
+            - name: BOT_ACCOUNT_PASSWORD_FILE
+              value: /mnt/secrets-store/account_password
+            - name: BOT_CONTROL_TOKEN_FILE
+              value: /mnt/secrets-store/control_token
+          ports:
+            - name: http
+              containerPort: 8080
+          volumeMounts:
+            - name: shared-runtime
+              mountPath: /shared
+            - name: secrets-store
+              mountPath: /mnt/secrets-store
+              readOnly: true
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: http
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: http
+            initialDelaySeconds: 20
+            periodSeconds: 20
+        - name: openkore
+          image: ghcr.io/ro-ai/openkore:latest
+          imagePullPolicy: IfNotPresent
+          volumeMounts:
+            - name: shared-runtime
+              mountPath: /shared
+            - name: secrets-store
+              mountPath: /mnt/secrets-store
+              readOnly: true
+      volumes:
+        - name: shared-runtime
+          emptyDir: {}
+        - name: secrets-store
+          csi:
+            driver: secrets-store.csi.k8s.io
+            readOnly: true
+            volumeAttributes:
+              secretProviderClass: ro-ai-bot-runtime-secrets

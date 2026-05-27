@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ro-ai-intelligence-config
+  namespace: ro-ai-intelligence
+data:
+  WORLD_LOGIN_ADDR: rathena-login.ro-ai-world.svc.cluster.local:6900
+  WORLD_CHAR_ADDR: rathena-char.ro-ai-world.svc.cluster.local:6121
+  WORLD_MAP_ADDR: rathena-map.ro-ai-world.svc.cluster.local:5121
+  BOT_RUNTIME_ADDR: ro-ai-bot-runtime.ro-ai-bots.svc.cluster.local:8080
+  MODEL_GATEWAY_URL: http://ro-ai-model-gateway:8080

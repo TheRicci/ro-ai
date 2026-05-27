@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ro-ai-model-gateway
+  namespace: ro-ai-intelligence
+  labels:
+    app.kubernetes.io/name: ro-ai-model-gateway
+    app.kubernetes.io/part-of: ro-ai-intelligence
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: ro-ai-model-gateway
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: ro-ai-model-gateway
+        app.kubernetes.io/part-of: ro-ai-intelligence
+    spec:
+      serviceAccountName: ro-ai-model-gateway
+      containers:
+        - name: model-gateway
+          image: ghcr.io/ro-ai/model-gateway:latest
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: MODEL_API_KEY_FILE
+              value: /mnt/secrets-store/model_api_key
+            - name: MODEL_BASE_URL_FILE
+              value: /mnt/secrets-store/model_base_url
+          ports:
+            - name: http
+              containerPort: 8080
+          volumeMounts:
+            - name: secrets-store
+              mountPath: /mnt/secrets-store
+              readOnly: true
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: http
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: http
+            initialDelaySeconds: 20
+            periodSeconds: 20
+      volumes:
+        - name: secrets-store
+          csi:
+            driver: secrets-store.csi.k8s.io
+            readOnly: true
+            volumeAttributes:
+              secretProviderClass: ro-ai-intelligence-secrets
